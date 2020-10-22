@@ -1,0 +1,42 @@
+{
+  "name": "sammy-packages",
+  "version": "1.0.2",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": "Agostinho Lopes",
+  "private": false,
+  "description": "A simple way to manaje a list of application dependencies",
+  "files": [
+    ".dist/**/*"
+  ],
+  "keywords": [
+    "Sammy Packages",
+    "Sammy Packs",
+    "Sammy",
+    "Packages",
+    "Packs",
+    "Application Dependency",
+    "Application Dependencies"
+  ],
+  "_moduleAliases": {
+    "~": "./src",
+    "~r": "."
+  },
+  "_moduleAliasIgnoreWarning": true,
+  "scripts": {
+    "dev": "npm-run-all -p serve:*",
+    "serve:config": "link-module-alias",
+    "serve:dev": "nodemon src/index.js"
+  },
+  "homepage": "https://github.com/agostinhosamil/sammy-packages",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agostinhosamil/sammy-packages.git"
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0",
+    "nodemon": "^2.0.6",
+    "sucrase": "^3.16.0",
+    "yarn-run-all": "^3.1.1"
+  }
+}

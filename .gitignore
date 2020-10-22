@@ -1,0 +1,5 @@
+node_modules
+
+# Ignore the yarn and npm error file
+nmp-error.log
+yarn-error.log
